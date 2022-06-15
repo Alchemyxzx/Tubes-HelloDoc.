@@ -7,7 +7,6 @@ if(isset($_POST['submit']))
 {
 	$docspecialization=$_POST['Doctorspecialization'];
 $docname=$_POST['docname'];
-$docaddress=$_POST['clinicaddress'];
 $docfees=$_POST['docfees'];
 $doccontactno=$_POST['doccontact'];
 $docemail=$_POST['docemail'];
@@ -114,13 +113,6 @@ while($row=mysqli_fetch_array($ret))
 	<input type="text" name="docname" class="form-control" value="<?php echo htmlentities($data['doctorName']);?>" >
 														</div>
 
-
-<div class="form-group">
-															<label for="address">
-																 Doctor Clinic Address
-															</label>
-					<textarea name="clinicaddress" class="form-control"><?php echo htmlentities($data['address']);?></textarea>
-														</div>
 <div class="form-group">
 															<label for="fess">
 																 Doctor Consultancy Fees

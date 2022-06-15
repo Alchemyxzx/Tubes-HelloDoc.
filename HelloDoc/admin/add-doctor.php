@@ -8,7 +8,6 @@ check_login();
 if(isset($_POST['submit']))
 {	$docspecialization=$_POST['Doctorspecialization'];
 $docname=$_POST['docname'];
-$docaddress=$_POST['clinicaddress'];
 $docfees=$_POST['docfees'];
 $doccontactno=$_POST['doccontact'];
 $docemail=$_POST['docemail'];

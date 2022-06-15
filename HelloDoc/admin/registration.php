@@ -11,7 +11,7 @@ $password=md5($_POST['password']);
 $query=mysql_query("insert into users(fullname,address,city,gender,email,password) values('$fname','$address','$city','$gender','$email','$password')");
 if($query)
 {
-	echo "<script>alert('Successfully Registered. You can login now');</script>";
+	echo "<script>alert('Berhasil Daftar. Anda Bisa Masuk Sekarang');</script>";
 }
 }
 ?>
@@ -122,7 +122,7 @@ if($query)
 					</form>
 
 					<div class="copyright">
-						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> HMS</span>. <span>All rights reserved</span>
+						&copy; <span class="current-year"></span><span class="text-bold text-uppercase"> Hello Doc</span>. <span>All rights reserved</span>
 					</div>
 
 				</div>

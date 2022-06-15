@@ -9,13 +9,13 @@ check_login();
 if(isset($_GET['del']))
 		  {
 		          mysqli_query($con,"delete from doctors where id = '".$_GET['id']."'");
-                  $_SESSION['msg']="data deleted !!";
+                  $_SESSION['msg']="data dihapus !!";
 		  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Admin | Manage Read Queries</title>
+		<title>Admin | Kelola Kontak Sudah Dibaca</title>
 		
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -46,14 +46,14 @@ if(isset($_GET['del']))
 						<section id="page-title">
 							<div class="row">
 								<div class="col-sm-8">
-									<h1 class="mainTitle">Admin | Manage Read Queries</h1>
+									<h1 class="mainTitle">Admin | Kelola Kontak Sudah Dibaca</h1>
 																	</div>
 								<ol class="breadcrumb">
 									<li>
 										<span>Admin</span>
 									</li>
 									<li class="active">
-										<span>Read Queries</span>
+										<span>Kontak Sudah Dibaca</span>
 									</li>
 								</ol>
 							</div>
@@ -70,11 +70,11 @@ if(isset($_GET['del']))
 										<thead>
 											<tr>
 												<th class="center">#</th>
-												<th>Name</th>
+												<th>Nama</th>
 												<th class="hidden-xs">Email</th>
-												<th>Contact No. </th>
-												<th>Message </th>
-												<th>Action</th>
+												<th>Kontak No. </th>
+												<th>Pesan </th>
+												<th>Aksi</th>
 												
 											</tr>
 										</thead>
